@@ -1,0 +1,141 @@
+body {
+    position: relative;
+}
+
+.content {
+    width: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.switch-button {
+    position: absolute;
+    width: 120px;
+    min-height: 30px;
+    background: beige;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    top: 20%;
+    right: 20%;
+}
+.timer-field{
+    width: 600px;
+    display: none;
+}
+
+.btn{
+    height: 40px;
+    background: blanchedalmond;
+    text-align: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.btn:hover{
+    background: darkkhaki;
+}
+
+.active-button{
+    background: aquamarine;
+}
+.timer-show{
+    min-height: 120px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+}
+.input-timer{
+    height: 50px;
+    width: 80px;
+    margin-right: 1px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+.timer-btn-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.timer-btn-block-start,
+.timer-btn-block-end{
+    width: 50%;
+}
+@media screen and (max-width: 992px){
+    .content{
+        padding-top: 30px;
+        width: 960px;
+    }
+    .timer-field{
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width: 768px){
+    .content {
+        width: 720px;
+        padding-top: 30px;
+    }
+    .switch-button {
+        top: 20px;
+        right: 20px;
+    }
+    .timer-field{
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    #datecalc{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 300px;
+    }
+    .form-button{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .content{
+        padding-top: 40px;
+        width: 100%;
+    }
+    .switch-button {
+        top: 20px;
+        right: 45%;
+    }
+    #datecalc{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 300px;
+    }
+
+    .timer-field{
+        padding-top: 40px;
+    }
+    .input-timer{
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+    }
+    .timer-btn-block{
+        display: flex;
+       flex-direction: column;
+    }
+    .timer-btn-block-start,
+    .timer-btn-block-end,
+    .form-button{
+        width: 100%;
+    }
+}

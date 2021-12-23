@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="module" src="./js/main.js"></script>
+
+</head>
+<body>
+<div class="content">
+    <form id="datecalc" class="datecalc">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate"/>
+        </label>
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate"/>
+        </label>
+        <button type="submit" class="form-button">Рассчитать промежуток</button>
+        <p id="datecalc__result"></p>
+    </form>
+    <div class="timer-field">
+            <div class="timer-show">
+                <div class="timer-show-inner-block">
+                    <input type="number" min="0"  placeholder="00" class=" input-timer hours">
+                    <input type="number" min="0"  max="59" placeholder="00" class=" input-timer minutes">
+                    <input type="number" min="0"  max="59" placeholder="00" class="input-timer seconds">
+                </div>
+                <div class="result-timer"></div>
+            </div>
+
+            <div class="timer-btn-block">
+                <button class=" btn timer-btn-block-start">Старт</button>
+                <button class="btn timer-btn-block-end" disabled>Стоп</button>
+            </div>
+    </div>
+</div>
+<button type="button" class="switch-button calculator">Таймер</button>
+</body>
+</html>
